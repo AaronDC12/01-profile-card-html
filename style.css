@@ -1,0 +1,63 @@
+/* Set the background color for the whole page and center content vertically and horizontally */
+body {
+  background-color: #e3f0fc; /* Light blue background for a soft look */
+  display: flex; /* Use flexbox to center the card */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Make sure body takes full viewport height */
+  text-align: center; /* Center text inside the body */
+  font-family: 'Segoe UI', 'Arial', sans-serif; /* Use a clean, modern font */
+}
+
+/* Style the profile card to look like a card */
+.profile-card {
+  background: #fff; /* White background for the card */
+  border: 1.5px solid #b0b0b0; /* Subtle border for card edges */
+  border-radius: 18px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 16px rgba(10, 35, 66, 0.08); /* Light shadow for depth */
+  padding: 36px 32px; /* Space inside the card */
+  max-width: 400px; /* Limit card width for better appearance */
+  margin: 24px; /* Space around the card */
+  display: inline-block; /* Shrink to fit content, allows centering */
+}
+
+/* Remove bullet points and add spacing to all lists inside the profile card */
+.profile-card ul {
+  list-style: none; /* Remove bullets */
+  padding: 0;       /* Remove default padding */
+  margin: 16px 0;   /* Add vertical spacing */
+}
+
+/* Add spacing between list items */
+.profile-card ul li {
+  margin-bottom: 8px;
+}
+
+/* Resize and style the profile image */
+.profile-card img {
+  width: 96px;         /* Smaller width for better fit */
+  height: 96px;        /* Keep it square */
+  border-radius: 50%;  /* Make it circular */
+  object-fit: cover;   /* Ensure the image covers the area */
+  
+}
+
+/* Style for the main name/title */
+.profile-card h1 {
+  font-size: 48px; /* Large font for the name */
+  text-align: center; /* Center the text */
+  color: #0a2342; /* Dark blue for emphasis */
+}
+
+/* Style for the subtitle/role */
+.profile-card h2 {
+  font-size: 32px; /* Slightly smaller than h1 */
+  text-align: center; /* Center the text */
+  color: #b0b0b0; /* Slate grey for a softer look */
+}
+
+/* Style for the main description text */
+.profile-card p {
+  font-size: 20px; /* Readable font size */
+  line-height: 1.6; /* More space between lines for readability */
+}
